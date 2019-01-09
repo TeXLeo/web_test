@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta http-equiv='refresh' content='3600'>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- Google Analytics -->
+ <!--   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-114604659-1', 'auto');
+  ga('send', 'pageview');
+</script> -->
+<!-- Packages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.29.0/date_fns.min.js"></script>
+
+
+</head>
+<body>
+    <!-- Time -->
+
+<script src="travelTime/timeNow.js"></script>
+
+<!-- Main -->
+
+<div data-role="footer" id="pageone">
+  <div data-role="header">
+    <p align="center">即時資訊 | Online information</p>
+  </div>
+  
+</div>
+<!-- Main2 -->
+<div data-role="footer">
+   <div id="msg_bar"><strong>News:</strong><marquee width="80%">
+	系統正在測試中/本系統每隔1小時將會自動的更新內容/以上內容由Clocklink；HKBRDA；香港天文台；Windytv ;運輸署提供-------------------    
+	<!--img src="http://odc90ygt6.bkt.clouddn.com/T1-C2.gif" alt="T1"-->
+	<!--img src="http://odc90ygt6.bkt.clouddn.com/T3-E2.gif" alt="T3"-->
+	<!--img src="http://odc90ygt6.bkt.clouddn.com/T8-E2.gif" alt="T8"-->
+	<!--This is a comment. Comments are not displayed in the browser-->
+    </marquee></div>
+  </div>
+  
+  <div data-role="footer">
+    <div data-role="footer"><center>日期/時間</center></div>
+    <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:440px;height:45px;"src="http://www.clocklink.com/html5embed.php?clock=018&timezone=HongKong_HongKong&color=orange&size=440&Title=&Message=&Target=&From=2017,1,1,0,0,0&DateFormat=yyyy / mm / dd DDD&TimeFormat=hh:mm:ss TT&Color=orange"></iframe>
+     </div>
+     
+  <div data-role="footer">
+    <div data-role="footer"><center>新聞 | News</center></div>
+ <hr />
+<p><a href="http://infolink.hkbrda.org/click.php"><img width="480" height="96" alt="InfoLink by HKBRDA" src="http://infolink.hkbrda.org/view.php/1" /></a></p>
+<hr />
+     </div>
+     
+  <div data-role="footer">
+    <div data-role="footer"><center>天氣報告 | Weather Report</center></div>
+<iframe frameborder="0" width="620" height="430" scrolling="yes" src="http://rss.weather.gov.hk/rss/LocalWeatherForecast_uc.xml"></iframe>
+<iframe src="https://embed.windyty.com/?22.482,113.972,7,gust,message,metric.wind.km/h" width="600" height="500" frameborder="0"></iframe>
+     </div>
+<!-- TD Cameras -->
+
+  <div data-role="footer">
+    <div data-role="footer"><center>交通情況快拍 | Instant Traffic Snapshots</center></div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-mini="true">
+      <h1>林士街天橋 Rumsey St Flyover</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/H110F.JPG" style="width:300px;"></p>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>夏愨道及告士打道<br>Harcourt Rd / Gloucester Rd</h1>
+	<table style="width:100%" border = 1>
+		<tr><td>
+		<p>夏愨道 Harcourt Road</p>
+		<img src="http://tdcctv.data.one.gov.hk/H214F.JPG" style="width:300px;">
+		</td></tr><tr><td>
+		<p>告士打道 Gloucester Road</p>
+		<img src="http://tdcctv.data.one.gov.hk/H222F.JPG" style="width:300px;">
+		</td></tr>
+	</table>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>紅隧九龍入口<br>CHT Kowloon Entrance</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/K107F.JPG" style="width:300px;"></p>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>佐敦道 Jordan Road</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/K108F.JPG" style="width:300px;"></p>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>銅鑼灣怡和街<br>Causeway Bay (Yee Wo St)</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/H203F.JPG" style="width:300px;"></p>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>銅鑼灣維多利亞公園近興發街<br>Victoria Park near Hing Fat St</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/H305F.JPG" style="width:300px;"></p>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>英皇道近電廠街<br>King's Rd near Tin Chong St</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/H307F.JPG" style="width:300px;"></p>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>旺角彌敦道近聯合廣場<br>Mong Kok Nathan Rd Near Allied Plaza</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/K205F.JPG" style="width:300px;"></p>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>西隧港島入口 WHT Island Entrance</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/H702F.JPG" style="width:300px;"></p>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+      <h1>薄扶林道近士美菲路<br>Pokfulam Rd near Smithfield</h1>
+      <p><img src="http://tdcctv.data.one.gov.hk/H132F2.JPG" style="width:300px;"></p>
+    </div>
+  </div>
+
+
+</body>
+</html>
